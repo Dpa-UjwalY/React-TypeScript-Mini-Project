@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
+import { MdDelete } from "react-icons/md";
 
 type ItemProps = {
   id: number;
@@ -11,7 +12,7 @@ type ItemProps = {
 
 export function StoreItem({ id, name, price, url }: ItemProps) {
   
-    const {getItemQuant, increaseItemQuant, decreaseItemQuant, removeItemQuant} = useShoppingCart()
+    const {getItemQuant, increaseItemQuant, decreaseItemQuant, removeFromCart} = useShoppingCart()
 
     const quantity = getItemQuant(id);
 
@@ -35,22 +36,19 @@ export function StoreItem({ id, name, price, url }: ItemProps) {
             </Button>
           ) : (
             <div
-              className="d-flex align-items-center flex-column"
+              className="d-flex align-items-center justify-content-center"
               style={{ gap: ".5rem" }}
             >
-              <div
-                className="d-flex align-item-center justify-content-center"
-                style={{ gap: ".5rem" }}
-              >
+              
                 <Button variant="dark" onClick={() => decreaseItemQuant(id)} >-</Button>
                 <div>
                   <span className="fs-3">{quantity}</span>
                 </div>
                 <Button variant="dark" onClick={() => increaseItemQuant(id)} >+</Button>
-              </div>
-              <Button onClick={() => removeItemQuant(id)} variant="dark" size="sm">
-                Remove
-              </Button>
+              <MdDelete onClick={() => removeFromCart(id)} style={{ width: "2rem", height: "3rem"}} />
+        
+              {/* <Button onClick={() => removeItemQuant(id)} variant="dark" size="sm">
+              </Button> */}
             </div>
           )}
         </div>

@@ -1,4 +1,5 @@
 import { createContext, useContext, ReactNode, useState } from "react";
+import { Cart } from "../pages/Cart";
 
 type ShoppingCartProviderProps = {
   children: ReactNode;
@@ -8,13 +9,17 @@ type ShoppingCartContext = {
   getItemQuant: (id: number) => number;
   increaseItemQuant: (id: number) => void;
   decreaseItemQuant: (id: number) => void;
-  removeItemQuant: (id: number) => void;
+  removeFromCart: (id: number) => void;
+  cartQuant: number;
+  cartItems: CartItem[];
+  openCart: () => void
 };
 
 type CartItem = {
   id: number;
   quantity: number;
 };
+
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
@@ -23,14 +28,22 @@ export function useShoppingCart() {
 }
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-  const [cartItem, setCartItem] = useState<CartItem[]>([]);
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const cartQuant = cartItems.reduce(
+    (quantity, item) => item.quantity + quantity,
+    0
+  );
+
+  const openCart = ()=> setIsOpen(true);
 
   const getItemQuant = (id: number) => {
-    return cartItem.find((item) => item.id === id)?.quantity || 0;
+    return cartItems.find((item) => item.id === id)?.quantity || 0;
   };
 
   const increaseItemQuant = (id: number) => {
-    setCartItem((currItems) => {
+    setCartItems((currItems) => {
       if (currItems.find((item) => item.id === id) == null) {
         return [...currItems, { id, quantity: 1 }];
       } else {
@@ -46,7 +59,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   };
 
   const decreaseItemQuant = (id: number) => {
-    setCartItem((currItems) => {
+    setCartItems((currItems) => {
       if (currItems.find((item) => item.id === id)?.quantity == 1) {
         return currItems.filter((item) => item.id !== id);
       } else {
@@ -61,8 +74,8 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     });
   };
 
-  const removeItemQuant = (id: number) => {
-    setCartItem((currItem) => {
+  const removeFromCart = (id: number) => {
+    setCartItems((currItem) => {
       return currItem.filter((item) => item.id !== id);
     });
   };
@@ -73,7 +86,10 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         getItemQuant,
         increaseItemQuant,
         decreaseItemQuant,
-        removeItemQuant,
+        removeFromCart,
+        cartItems,
+        cartQuant,
+        openCart
       }}
     >
       {children}

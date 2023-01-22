@@ -2,7 +2,13 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs"
 import { useState } from "react";
+import { useShoppingCart } from "../context/ShoppingCartContext";
+import "../App.css"
+
+
 export function NavBar() {
+
+  const { openCart, cartQuant } = useShoppingCart()
 
   const [navv, setNavv] = useState(false);
   const changeBackground = () =>{
@@ -33,8 +39,8 @@ export function NavBar() {
           </Nav.Link>
         </Nav>
           <Nav.Link  to="/cart" as={NavLink} className="text-light" style={{position:"relative", width: "4rem" }}>
-            <BsCart4 style={{ width: "2rem", height: "2rem"}} />
-            <div className="rounded-circle bg-warning d-flex justify-content-center align-items-center" style={{width: "1.2rem", height: "1.2rem", position:"absolute",right:0, transform: "translate(-55%, -45%"}}>3</div>
+            <BsCart4 onClick={openCart} style={{ width: "2rem", height: "2rem"}} />
+            { cartQuant ? <div className="rounded-circle bg-warning d-flex justify-content-center align-items-center cart-quant" >{cartQuant}</div> : null}
           </Nav.Link>
         </Navbar.Collapse>
       </Container>

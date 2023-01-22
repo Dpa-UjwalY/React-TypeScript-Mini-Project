@@ -1,3 +1,20 @@
 .store-page{
     margin-top: 100px;
 }
+
+.cart-quant {
+    width : 1.2rem;
+    height : 1.2rem;
+    position: absolute;
+    right:0;
+    transform: translate(-55%, -45%);
+}
+
+.cart-item-align{
+    width: 40rem;
+}
+@media screen and (max-width: 600px) {
+    .cart-item-align{
+        width: 20rem
+    }
+}

@@ -1,3 +1,9 @@
+import "../App.css"
+
 export function About(){
-    return <h1>About Page</h1>
+    return (
+    <div className="store-page" >
+        <h1>About Page</h1>
+    </div>
+    )
 }

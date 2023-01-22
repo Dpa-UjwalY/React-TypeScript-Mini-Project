@@ -1,3 +1,9 @@
+import "../App.css"
+
 export function Home(){
-    return <h1>Home Page</h1>
+    return (
+        <div className="store-page" >
+            <h1>Home Page</h1>
+        </div>
+        )
 }

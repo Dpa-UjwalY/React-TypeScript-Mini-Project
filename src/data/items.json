@@ -5,7 +5,7 @@
       "price": 499.99,
       "currency": "EUR",
       "image": "images/01.jpg",
-      "url": "http://www.home24.de/m-rteens/mit-hocker-917965"
+      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "price": 249.99,
       "currency": "EUR",
       "image": "images/02.jpg",
-      "url": "http://www.home24.de/m-rteens/sessel-sofie-samtvelour-gruen-913483"
+      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
     },
     {
       "id": 3,
@@ -21,7 +21,7 @@
       "price": 239.99,
       "currency": "EUR",
       "image": "images/04.jpg",
-      "url": "http://www.home24.de/m-rteens/schlafsessel-rovigo-kunstleder-weiss-911671"
+      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
     },
     {
       "id": 4,
@@ -29,7 +29,7 @@
       "price": 119.99,
       "currency": "EUR",
       "image": "images/06.jpg",
-      "url": "http://www.home24.de/m-rteens/sessel-little-webstoff-rot-757345"
+      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
     },
     {
       "id": 5,
@@ -37,7 +37,7 @@
       "price": 599.99,
       "currency": "EUR",
       "image": "images/05.jpg",
-      "url": "http://www.home24.de/kare-design/sessel-peacock-stoff-mehrfarbig"
+      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
     },
     {
       "id": 6,
@@ -45,6 +45,6 @@
       "price": 149.99,
       "currency": "EUR",
       "image": "images/03.jpg",
-      "url": "http://www.home24.de/re-concept/sessel-anna-stoff-olivgruen-779539"
+      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
     }
   ]
