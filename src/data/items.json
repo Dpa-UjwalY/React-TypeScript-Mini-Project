@@ -1,50 +1,50 @@
 [
     {
       "id": 1,
-      "name": "Ohrensessel Josslyn",
-      "price": 499.99,
-      "currency": "EUR",
+      "name": "Fogg Absolute Perfume Body Spray",
+      "price": 275.99,
+      "currency": "INR",
       "image": "images/01.jpg",
-      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
+      "url": "https://m.media-amazon.com/images/I/614jPzueegL._SL1500_.jpg"
     },
     {
       "id": 2,
-      "name": "Sessel Sofie",
-      "price": 249.99,
-      "currency": "EUR",
+      "name": "Oppo Enco Buds Bluetooth True Wireless in Ear Earbuds(TWS)",
+      "price": 1599.99,
+      "currency": "INR",
       "image": "images/02.jpg",
-      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
+      "url": "https://m.media-amazon.com/images/I/51-9+QbUWGL._SL1500_.jpg"
     },
     {
       "id": 3,
-      "name": "Schlafsessel Rovigo",
-      "price": 239.99,
-      "currency": "EUR",
+      "name": "Logitech Plug and Play USB Keyboard",
+      "price": 659.99,
+      "currency": "INR",
       "image": "images/04.jpg",
-      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
+      "url": "https://m.media-amazon.com/images/I/51nKw8Bv9+L._SL1500_.jpg"
     },
     {
       "id": 4,
-      "name": "Sessel Little",
-      "price": 119.99,
-      "currency": "EUR",
+      "name": "Logitech B100 Wired USB Mouse",
+      "price": 269.99,
+      "currency": "INR",
       "image": "images/06.jpg",
-      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
+      "url": "https://m.media-amazon.com/images/I/61hzuoXwjqL._SL1500_.jpg"
     },
     {
       "id": 5,
-      "name": "Sessel Peacock",
-      "price": 599.99,
-      "currency": "EUR",
+      "name": "Dell 27\" (68.58cm) FHD Monitor 1920 X 1080",
+      "price": 14999.99,
+      "currency": "INR",
       "image": "images/05.jpg",
-      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
+      "url": "https://m.media-amazon.com/images/I/81HQTxWTQ7L._SL1500_.jpg"
     },
     {
       "id": 6,
-      "name": "Sessel Anna",
-      "price": 149.99,
-      "currency": "EUR",
+      "name": "MSI Optix Mag342Cqr 34 Inch (86.36 Cm) Curved",
+      "price": 45299.99,
+      "currency": "INR",
       "image": "images/03.jpg",
-      "url": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/02/git-cheat-sheet-cover.jpg"
+      "url": "https://m.media-amazon.com/images/I/71EUdePy6ML._SL1500_.jpg"
     }
   ]

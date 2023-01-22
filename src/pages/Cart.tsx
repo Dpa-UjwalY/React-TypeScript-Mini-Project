@@ -11,7 +11,7 @@ export function Cart() {
   return (
     <>
       {cartQuant ? (
-        <div className="store-page">
+        <div className="store-page app">
           <Container>
             <Stack gap={3}>
               {cartItems.map((item) => (
@@ -29,7 +29,7 @@ export function Cart() {
           </Container>
         </div>
       ) : (
-        <h1 className="store-page">Opps.... It's lonely here</h1>
+        <h1 className="store-page app">Opps.... It's lonely here</h1>
       )}
     </>
   );

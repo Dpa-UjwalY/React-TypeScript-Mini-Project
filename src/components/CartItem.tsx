@@ -18,13 +18,13 @@ export function CartItem({ id, quantity }: CartItemProps) {
   if (item == null) return null;
 
   return (
-    <Card className="cart-item-align" >
+    <Card className="cart-item-align app" >
       <Row className="p-0">
         <Col>
           <Card.Img variant="top"
             src={item.url}
-            height="150px"
-            style={{ objectFit: "cover" }} />
+            height="200px"
+            style={{ objectFit: "contain" }} />
         </Col>
         <Col className="ps-0 d-flex flex-column justify-content-between" >
             <div className="d-flex justify-content-between align-items-center">

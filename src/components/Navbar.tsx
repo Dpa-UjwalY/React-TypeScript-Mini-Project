@@ -21,7 +21,7 @@ export function NavBar() {
   window.addEventListener('scroll', changeBackground);
   return (
     <Navbar className={navv ? 'navv active' : 'navv'}  fixed="top"  collapseOnSelect bg="dark" expand="lg" >
-      <Container >
+      <Container className="app" >
           <Navbar.Brand to="/" as={NavLink} className="text-light ">
             <h1>HederaStore</h1>
           </Navbar.Brand>
