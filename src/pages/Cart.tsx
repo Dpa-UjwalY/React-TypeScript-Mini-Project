@@ -13,7 +13,7 @@ export function Cart() {
       {cartQuant ? (
         <div className="store-page app">
           <Container>
-            <Stack gap={3}>
+            <Stack  gap={1}  >
               {cartItems.map((item) => (
                 <CartItem key={item.id} {...item} />
               ))}

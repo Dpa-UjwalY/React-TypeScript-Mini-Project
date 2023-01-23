@@ -23,7 +23,7 @@ export function NavBar() {
     <Navbar className={navv ? 'navv active' : 'navv'}  fixed="top"  collapseOnSelect bg="dark" expand="lg" >
       <Container className="app" >
           <Navbar.Brand to="/" as={NavLink} className="text-light ">
-            <h1>HederaStore</h1>
+            <h1>Store</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="py-2" id="basic-navbar-nav">
