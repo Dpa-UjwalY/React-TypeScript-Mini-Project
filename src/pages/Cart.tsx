@@ -20,10 +20,17 @@ export function Cart() {
             </Stack>
             <div>
               <h2>
-                Total <span>{formatCurrency(cartItems.reduce((total, cartItem) =>{
-                    const item = storeItems.find(item => item.id === cartItem.id)
-                    return total + (item?.price || 0)*cartItem.quantity
-                }, 0))}</span>
+                Total{" "}
+                <span>
+                  {formatCurrency(
+                    cartItems.reduce((total, cartItem) => {
+                      const item = storeItems.find(
+                        (item) => item.id === cartItem.id
+                      );
+                      return total + (item?.price || 0) * cartItem.quantity;
+                    }, 0)
+                  )}
+                </span>
               </h2>
             </div>
           </Container>
